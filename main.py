@@ -10,7 +10,8 @@ with st.sidebar.expander('PYTHON'):
 
 if page == 'numpy':
     nparr = []
-    code = st.code('nparr = np.random.randint(2,10,5)')
+    code = st.text_area('code', value='nparr = np.random.randint(2,10,5)')
+    # st.code(code)
     if st.button('실행') and not('import' in code): 
         exec(code)
         st.text_area(nparr)
