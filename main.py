@@ -14,7 +14,7 @@ if page == 'numpy':
     # st.code(code)
     if st.button('실행') and not('import' in code): 
         exec(code)
-        st.text_area(nparr)
+        st.text_area(str(nparr))
 
 
 st.text('hello world')
