@@ -13,8 +13,9 @@ if page == 'numpy':
     code = st.text_area('code', value='nparr = np.random.randint(2,10,5)')
     # st.code(code)
     if st.button('실행') and not('import' in code): 
-        exec(code)
-        st.text_area(str(nparr))
+        if 'import' in code:
+            st.text('import 키워드를 사용 할 수 없습니다.')
+        else:
+            exec(code)
+            st.text_area('output', value=str(nparr))
 
-
-st.text('hello world')
