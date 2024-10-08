@@ -8,5 +8,6 @@
 > >>> eval "$(ssh-agent -s)"
 > >>> ssh-add ~/.ssh/choyoon8282-github-key
 > 깃허브 - 셋팅 - ssh키 등록
+> >>> git remote set-url origin git@github.com:choyoon82/pytorch.git    
 > >>> ssh -T git@github.com
 - ssh-keygen -t rsa -b 4096 -C choyoon8282@gmail.com -f ~/.ssh/choyoon8282-github-key
