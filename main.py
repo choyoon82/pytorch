@@ -13,7 +13,7 @@ if page == 'numpy':
         print(nparr)
         ''')
     if st.button('실행'):
-        st.text_area(exec(code))
+        st.text_area(str(exec(code)))
 
 
 st.text('hello world')
